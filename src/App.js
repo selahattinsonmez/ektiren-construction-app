@@ -3,10 +3,10 @@ import './App.css';
 import { styled } from '@mui/material/styles';
 
 import Navbar from './components/Navbar.tsx';
-import Services from './components/Services.tsx';
+import Projects from './components/Projects.tsx';
 import { useTranslation } from 'react-i18next';
 import Box from '@mui/material/Box';
-import backgroundImage from './img/home-page-background.jpg'
+import backgroundImage from './img/ektiren-background.jpg'
 import { Grid } from '@mui/material';
 import { red, green, blue } from '@mui/material/colors';
 
@@ -52,7 +52,7 @@ function App() {
         </div>
 
       </div>
-      <Services></Services>
+      <Projects></Projects>
 
         <Box sx={{ my: 2 }}>
 
