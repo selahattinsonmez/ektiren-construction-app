@@ -12,6 +12,7 @@ const resources = {
         "services-page": "Services",
         "project-page": "Projects",
         "contact-page": "Contact",
+        "about-us": "About Us",
         "projects": "Projects"
     }
   },
@@ -22,6 +23,7 @@ const resources = {
       "services-page": "Hizmetlerimiz",
       "project-page": "Projelerimiz",
       "contact-page": "İletişim",
+      "about-us": "Hakkımızda",
       "projects": "Projelerimiz"
     }
   }

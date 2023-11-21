@@ -51,21 +51,6 @@
   height: 100%;
 }
 
-
-.home-page-background-texts {
-  position: absolute;
-
-  background: transparent;
-  text-align: center;
-  align-content: center;
-  align-items: center;
-  z-index: 2;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-
-}
-
 .dotted-img {
   background-repeat: repeat;
   width: 100%;
@@ -75,4 +60,17 @@
   left: 0px;
   z-index: 3;
   background: url(./img/gridtile.png);
+}
+
+.background-text-head {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.background-text-explanation {
+  font-size: 13px;
+  margin: 0;
+  padding: 0;
 }
