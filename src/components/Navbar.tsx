@@ -3,7 +3,7 @@ import { AppBar, Grid, Tab, Tabs, Toolbar, Typography, useMediaQuery, useTheme }
 import useScrollTrigger from '@mui/material/useScrollTrigger';
 import { useTranslation } from 'react-i18next';
 import DrawerComp from './DrawerComp.js';
-import logo from '../img/ektiren-high-resolution-logo-white.png'
+import logo from '../img/ektiren-high-resolution-logo-white.png';
 
 interface Props {
 window?: () => Window;

@@ -1,33 +1,15 @@
 import { useEffect } from 'react';
 import './App.css';
-import { styled } from '@mui/material/styles';
-
 import Navbar from './components/Navbar.tsx';
+import AboutUs from './components/AboutUs.tsx';
 import Projects from './components/Projects.tsx';
 import { useTranslation } from 'react-i18next';
 import Box from '@mui/material/Box';
 import backgroundImage from './img/ektiren-background.jpg'
 import { Grid } from '@mui/material';
-import { red, green, blue } from '@mui/material/colors';
+import Button from '@mui/material/Button';
+import {BackgroundDiv, BackgroundTextDiv, BackgroundTextHead, BackgroundTextExplanation} from './components/StyledElements.tsx';
 
-const BackgroundDiv = styled('div')(({ theme }) => ({
-  padding: theme.spacing(1),
-  
-  [theme.breakpoints.up('xs')]: {
-    minWidth: '100%',
-    overflow: 'hidden',
-    transform: 'translate(-50%,0)',
-    marginLeft: '50%',
-    padding: 0,
-    maxHeight: '100%'
-  },
-  [theme.breakpoints.up('md')]: {
-    width: '100%',
-    overflow: 'hidden',
-
-    padding: 0,
-  }
-}));
 const links = ['home-page', 'about-us-page', 'services-page', 'project-page', 'contact-page',];
 function App() {
   const { t, i18n } = useTranslation();
@@ -46,15 +28,18 @@ function App() {
           <div class="dotted-img"></div>
           <img className='home-page-backgroud-image' src={backgroundImage}></img>
         </BackgroundDiv>
-        <div className='home-page-background-texts'>
-          <h1>25 YILLIK ÜLKEDE</h1>
-          <h1>85 YILLIK TECRUBE</h1>
-        </div>
+        <BackgroundTextDiv className='home-page-background-texts'>
+          <BackgroundTextHead>Ektiren İnşaat</BackgroundTextHead>
+          <BackgroundTextExplanation>Cras mattis consectetur purus sit amet fermentum.Cras justo odio, dapibus ac purus sit amet fermentum vestibulum at eros.Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </BackgroundTextExplanation>
+          <Button style={{backgroundColor: "rgba(183,55,40,255)", color: 'white',paddingLeft: '20px', paddingRight: '20px'}} >
+            Daha Fazla Bilgi »
+          </Button>
+        </BackgroundTextDiv>
 
       </div>
+      <AboutUs></AboutUs>
       <Projects></Projects>
-
-        <Box sx={{ my: 2 }}>
+      <Box sx={{ my: 2 }}>
 
         <Grid justifyContent="center" alignItems="center" container>
           <Grid xs={3}></Grid>
