@@ -59,14 +59,14 @@ const BackgroundTextHead = styled('p')(({ theme }) => ({
       fontWeight: "bold",
       margin: 0,
       padding: 0,
-      paddingBottom: "10px"
+      paddingBottom: "10px",
     },
     [theme.breakpoints.up('md')]: {
       fontSize: "40px",
       fontWeight: "bold",
       margin: 0,
       padding: 0,
-  
+
     }
 }));
   
@@ -93,10 +93,12 @@ const AboutUsHead = styled('p')(({ theme }) => ({
     padding: theme.spacing(1),
     
     [theme.breakpoints.up('xs')]: {
-        marginBottom: '20px', marginTop: '0px', fontSize:'25px', fontWeight:'Bold', paddingTop:'0px'
+      paddingLeft:'0',
+      marginBottom: '20px', marginTop: '0px', fontSize:'25px', fontWeight:'Bold', paddingTop:'0px',
     },
     [theme.breakpoints.up('md')]: {
-        marginBottom: '20px', marginTop: '40px', fontSize:'25px', fontWeight:'Bold'
+      paddingLeft:'0',
+      marginBottom: '20px', marginTop: '40px', fontSize:'25px', fontWeight:'Bold'
     }
 }));
 

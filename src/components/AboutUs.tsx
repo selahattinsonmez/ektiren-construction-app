@@ -6,19 +6,6 @@ import { useTranslation } from 'react-i18next';
 import aboutUsImage from '../img/about-us.jpg'
 import {AboutUsHead} from './StyledElements.tsx';
 
-
-
-const ResponsiveSize = styled('div')(({ theme }) => ({
-    padding: theme.spacing(1),
-    
-    [theme.breakpoints.up('xs')]: {
-        display: 'none'
-    },
-    [theme.breakpoints.up('md')]: {
-        display: 'block'
-    }
-  }));
-
 const Projects = ({props}) => {
     const { t } = useTranslation();
 
