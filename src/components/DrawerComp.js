@@ -11,7 +11,7 @@ const DrawerComp = ({links}) => {
             <Drawer variant="" PaperProps={{sx:{background: 'white'}}} background="white" anchor="right" open={open} onClose={() => setOpen(false)}>
                 <List>
                     {links.map((link, index)=>(
-                        <ListItemButton>
+                        <ListItemButton href={'#' + link}>
                             <ListItemIcon>
                                 <ListItemText textColor="white" key={link}>{t(link)}</ListItemText>
                             </ListItemIcon>

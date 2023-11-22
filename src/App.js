@@ -12,7 +12,7 @@ import {BackgroundDiv, BackgroundTextDiv, BackgroundTextHead, BackgroundTextExpl
 import Services from './components/Services.tsx';
 import Footer from './components/Footer.tsx';
 
-const links = ['home-page', 'about-us-page', 'services-page', 'project-page', 'contact-page',];
+const links = ['home-page', 'about-us-page', 'project-page', 'services-page', 'contact-page',];
 function App() {
   const { t, i18n } = useTranslation();
 
@@ -41,9 +41,9 @@ function App() {
       </div>
       <div id='about-us-page'></div>
       <AboutUs ></AboutUs>
-      <div id='services-page'></div>
-      <Projects></Projects>
       <div id='project-page'></div>
+      <Projects></Projects>
+      <div id='services-page'></div>
       <Services ></Services>
       <div id='contact-page' style={{margin:'0', padding:'0', marginBottom: '35px'}}></div>
       <Footer></Footer>

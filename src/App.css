@@ -88,10 +88,3 @@ html {
   display: 'flex';
   flex-direction: 'column';
 }
-
-.jump {
-  display: block;
-  position: relative;
-  top: -250px;
-  visibility: hidden;
-}
