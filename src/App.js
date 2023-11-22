@@ -9,6 +9,8 @@ import backgroundImage from './img/ektiren-background.jpg'
 import { Grid } from '@mui/material';
 import Button from '@mui/material/Button';
 import {BackgroundDiv, BackgroundTextDiv, BackgroundTextHead, BackgroundTextExplanation} from './components/StyledElements.tsx';
+import Services from './components/Services.tsx';
+import Footer from './components/Footer.tsx';
 
 const links = ['home-page', 'about-us-page', 'services-page', 'project-page', 'contact-page',];
 function App() {
@@ -21,7 +23,7 @@ function App() {
 
   const lng = navigator.language;
   return (
-    <div className="App">
+    <div id='home-page' className="App">
       <Navbar style={{zIndex:'3'}} links={links}></Navbar>
       <div style={{height: '100vh', position: 'relative', overflow: 'hidden', marginBottom: '20px'}}>
         <BackgroundDiv className='home-page-backgroud-div'>
@@ -31,37 +33,20 @@ function App() {
         <BackgroundTextDiv className='home-page-background-texts'>
           <BackgroundTextHead>Ektiren İnşaat</BackgroundTextHead>
           <BackgroundTextExplanation>Cras mattis consectetur purus sit amet fermentum.Cras justo odio, dapibus ac purus sit amet fermentum vestibulum at eros.Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </BackgroundTextExplanation>
-          <Button style={{backgroundColor: "rgba(183,55,40,255)", color: 'white',paddingLeft: '20px', paddingRight: '20px'}} >
+          <Button href='#about-us-page' style={{backgroundColor: "rgba(183,55,40,255)", color: 'white',paddingLeft: '20px', paddingRight: '20px'}} >
             Daha Fazla Bilgi »
           </Button>
         </BackgroundTextDiv>
 
       </div>
-      <AboutUs></AboutUs>
+      <div id='about-us-page'></div>
+      <AboutUs ></AboutUs>
+      <div id='services-page'></div>
       <Projects></Projects>
-      <Box sx={{ my: 2 }}>
-
-        <Grid justifyContent="center" alignItems="center" container>
-          <Grid xs={3}></Grid>
-          <Grid xs={9}>
-
-
-          </Grid>
-        </Grid>
-      </Box>
-
-      
-          <Box sx={{ my: 2 }}>
-          {[...new Array(100)]
-              .map(
-              () => `Cras mattis consectetur purus sit amet fermentum.
-                  Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-                  Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                  Praesent commodo cursus magna, vel scelerisque nisl consectetur et.`,
-              )
-              .join('\n')}
-          </Box>
-      <h1>{lng}</h1>
+      <div id='project-page'></div>
+      <Services ></Services>
+      <div id='contact-page' style={{margin:'0', padding:'0', marginBottom: '35px'}}></div>
+      <Footer></Footer>
     </div>
   );
 }

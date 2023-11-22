@@ -65,7 +65,7 @@ const Navbar = ({links, props}) => {
                                 </Typography>
                                 <Tabs  TabIndicatorProps={{style: {background:'#B0B0B0	'}}} textColor='white' value={tab} onChange={(e, tab) => {setTab(tab)}}>
                                     {links.map((link, index) => (
-                                        <Tab key={link} label={t(link)}></Tab>
+                                        <Tab href={'#'+link} key={link} label={t(link)}></Tab>
                                     ) )}
                                 </Tabs>
                             </Grid>
@@ -83,16 +83,4 @@ const Navbar = ({links, props}) => {
     )
 }
 
-export default Navbar;/*                            <Grid justifyContent="center" alignItems="center" xs={3}>
-<Typography>
-    <img src={logo}></img>
-</Typography>
-</Grid>
-<Grid container justifyContent="left" alignItems="center" item xs={9}>
-<Tabs  TabIndicatorProps={{style: {background:'#B0B0B0	'}}} textColor='white' value={tab} onChange={(e, tab) => {setTab(tab)}}>
-    {links.map((link, index) => (
-        <Tab key={link} label={t(link)}></Tab>
-    ) )}
-</Tabs>
-</Grid>
-*/
+export default Navbar;

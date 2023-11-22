@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -73,4 +77,21 @@
   font-size: 13px;
   margin: 0;
   padding: 0;
+}
+
+.services-section-card {
+  border: "none";
+  box-shadow: "none";
+}
+
+.services-section-box {
+  display: 'flex';
+  flex-direction: 'column';
+}
+
+.jump {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
 }

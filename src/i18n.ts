@@ -13,7 +13,8 @@ const resources = {
         "project-page": "Projects",
         "contact-page": "Contact",
         "about-us": "About Us",
-        "projects": "Projects"
+        "projects": "Projects",
+        "services": "Services"
     }
   },
   tr: {
@@ -24,7 +25,8 @@ const resources = {
       "project-page": "Projelerimiz",
       "contact-page": "İletişim",
       "about-us": "Hakkımızda",
-      "projects": "Projelerimiz"
+      "projects": "Projelerimiz",
+      "services": "Hizmetlerimiz"
     }
   }
 };
